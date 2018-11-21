@@ -1,0 +1,55 @@
+html {
+    font-family: 'Open Sans';
+}
+
+
+#header {
+    text-align: center;
+}
+
+#inputs-description {
+    display: flex;
+    
+}
+
+#inputs{
+    flex: 50%;
+    text-align: center;
+    
+
+ 
+}
+#description{
+    flex: 50%;
+
+}
+#description p{
+    width: 300px;
+}
+
+form{
+    display: inline-block;
+    padding-top: 50px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+#result{
+text-align: center;
+}
+
+#output p{
+    display: inline-block;
+    text-align: left;
+}
