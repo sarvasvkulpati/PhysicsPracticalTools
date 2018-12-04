@@ -3,41 +3,66 @@
 <html>
     <head>
         <title>Gradient Uncertainty Calculator</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
         <script src="script.js"></script>
     </head>
     <body>
-        <section id="header">
-            <h1>Gradient Uncertainty Calculator</h1>
-        </section>
-        <section id="inputs-description">
-            <!-- <div id="container"> -->
-                <div id="inputs">
-                    <form>
-                        <label>Max Gradient</label> <input type="text" name="max-gradient"><br>
-                        <label>Min Gradient</label> <input type="text" name="min-gradient"><br>
-                        <label>Average Gradient</label> <input type="text" name="average-gradient"><br>
-                        <label>Units </label><input type="text" name="units"><br>
-                    </form>
-                </div>
-                <div id="description">
-                    <p>Find it annoying to constantly type in the exact same stuff every time you do a physics practical? This is your solution.
-                            Type in the values on the left and get a formatted paragraph to paste into your practical.</p>
-                    <button onClick="calculate()">Calculate</button>
-                </div>
-            <!-- </div> -->
-        </section>
-        <section id="result">
-            <div id="output">
-                <p id="output">output</p>
+        <div id="header">
+            <p>Gradient Uncertainty Calculator</p>
+        </div>
+
+        <div id="container">
+            <div id="desc">
+                <p id="desc-info">
+                    <span>Find it annoying to constantly type in the exact same stuff every time you do a physics practical?</span>
+                    <br>
+                    <br>
+                    <b>This</b> is your solution.
+                    <br>
+                    Type in the values in the form and get a formatted paragraph to paste into your practical.
+                </p>
             </div>
-            
-        </section>
+
+            <div id="form">
+                <div class="field">
+                    <p class="field-name">Max Gradient</p>
+                    <input id='max-grad' type="text" placeholder="eg: 5.0" class="field-input">
+                </div>
+                <br>
+                <div class="field">
+                    <p class="field-name">Min Gradient</p>
+                    <input id='min-grad' type="text" placeholder="eg: 10.0" class="field-input">
+                </div>
+                <br>
+                <div class="field">
+                    <p class="field-name">Avg Gradient</p>
+                    <input id='avg-grad' type="text" placeholder="eg: 7.5" class="field-input">
+                </div>
+                <br>
+                <div class="field">
+                    <p class="field-name">Units of Grad</p>
+                    <input id='units' type="text" placeholder="eg: m/s^2" class="field-input">
+                </div>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="submit">Submit <i style="padding: 0 0 0 10px;" class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="output">
+            <p id="sect-title">
+                Output
+                <button id="copy-button"><i style="font-size: 20px;padding: 0 10px;" class="far fa-copy"></i></button>
+            </p>
+            <p id="answer">
+
+            </p>
+        </div>
 
     </body>
-
-
 </html>
